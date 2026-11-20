@@ -16,12 +16,12 @@ export interface IProcessor {
     price: number
     instock: boolean
     power: number
-    releseaseDate: data
+    releseaseDate: string
     rating: number
     createdAt: string
     updatedAt: string
     publishedAt: string
-    cover: IMedia | null
+    image: IMedia | null
 }
 
 export type ProcessorInput = Omit<IProcessor, | "id" | "documentId" | "createdAt" | "updatedAt" | "publishedAt" | "image">
